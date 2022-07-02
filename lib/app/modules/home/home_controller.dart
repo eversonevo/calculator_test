@@ -86,6 +86,22 @@ class HomeController extends GetxController {
     print('3 trim');
   }
 
+  void validate1TRIM(){
+                                  bool valida = true;
+                                  for (int i = 0; i < editingController1T.length;i++){
+                                    if (editingController1T[i].text.isEmpty){
+                                      valida = false;
+                                    }
+                                    if (i == editingController1T.length){
+                                      if (valida){
+                                        segundoTrim.value = true;
+                                      }else{
+                                        print('erro no campo tal');
+                                      }
+                                    }
+                                  }
+  }
+
 }
  
  

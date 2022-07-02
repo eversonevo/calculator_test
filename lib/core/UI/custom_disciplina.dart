@@ -30,7 +30,8 @@ class CustomDisciplina extends GetView<HomeController> {
                               child: TextFormField(
                                 keyboardType: TextInputType.number,
                                 //maxLength: 3,
-                                decoration: const InputDecoration(
+                                textDirection: TextDirection.rtl,
+                                decoration: const InputDecoration(                                  
                                   border: OutlineInputBorder(),
                                   //enabledBorder: InputBorder.none,
                                   focusedBorder: OutlineInputBorder(

@@ -68,7 +68,12 @@ class HomePage extends GetView<HomeController> {
                 ),
                 Visibility(
                   visible: controller.primeiroTrim.value == true  ? true : false,
-                  child: CustomDisciplina(trimestre: '1º TRIM',color: Colors.red,),
+                  child: Column(
+                    children: [
+                      CustomDisciplina(trimestre: '1º TRIM',color: Colors.red,),
+                      TextButton(onPressed: controller.validate1TRIM, child: Text('>>'))
+                    ],
+                  ),
                 ),
                 Visibility(
                   visible: !controller.segundoTrim.value  ? true : false,
